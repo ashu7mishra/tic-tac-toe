@@ -1,6 +1,6 @@
-import enum
+from enum import Enum
 
 
-class PlayerType(enum.Enum):
+class PlayerType(Enum):
     BOT = "BOT"
     HUMAN = "HUMAN"

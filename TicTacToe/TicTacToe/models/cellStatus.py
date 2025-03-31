@@ -1,7 +1,7 @@
-import enum
+from enum import Enum
 
 
-class CellStatus(enum.Enum):
+class CellStatus(Enum):
     EMPTY = "EMPTY"
     FILLED = "FILLED"
     BLOCKED = "BLOCKED"
