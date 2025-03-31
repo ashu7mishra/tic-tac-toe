@@ -1,16 +1,18 @@
 class GameController:
+    def __init__(self, gameService):
+        self.gameService = gameService
 
     def start_game(self, size, players, winning_strategies):
-        pass
+        self.gameService.start_game(size, players, winning_strategies)
 
-    def display_board(self):
-        pass
+    def display_board(self, game):
+        self.gameService.display_game(game)
 
-    def take_move(self):
-        pass
+    def take_move(self, game):
+        self.gameService.take_move(game)
 
-    def undo_move(self):
-        pass
+    def undo_move(self, game):
+        self.gameService.undo(game)
 
 
 
