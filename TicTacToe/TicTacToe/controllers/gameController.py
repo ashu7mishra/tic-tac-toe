@@ -3,7 +3,7 @@ class GameController:
         self.gameService = gameService
 
     def start_game(self, size, players, winning_strategies):
-        self.gameService.start_game(size, players, winning_strategies)
+        return self.gameService.start_game(size, players, winning_strategies)
 
     def display_board(self, game):
         self.gameService.display_game(game)
