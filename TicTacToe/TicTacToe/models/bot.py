@@ -6,3 +6,6 @@ class Bot(Player):
         super().__init__(name, player_id, PlayerType.BOT, symbol)
         self.difficulty = difficulty
 
+    def decide_cell(self, board):
+        pass
+

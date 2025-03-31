@@ -1,3 +1,4 @@
+from TicTacToe.TicTacToe.helper.gmaeBuilder import GameBuilder
 from board import Board
 from gameStatus import GameStatus
 
@@ -11,4 +12,7 @@ class Game:
         self.next_turn = 0
         self.winner = None
         self.game_status = GameStatus.INPROGRESS
-        
+
+    @staticmethod
+    def gameBuilder(self):
+        return GameBuilder()

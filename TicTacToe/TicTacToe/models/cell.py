@@ -7,3 +7,9 @@ class Cell:
         self.col = col
         self.player = None
         self.status = CellStatus.EMPTY
+
+    def display(self):
+        if self.status == CellStatus.EMPTY:
+            print("| - |", end="")
+        else:
+            print(f"| {self.player.Symbol.symbol} |", end="")
